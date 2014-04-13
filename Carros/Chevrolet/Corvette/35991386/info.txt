@@ -1,0 +1,13 @@
+Dealer's Price:	$39,900
+Location:	Riverside, CA
+Mileage:	19,062 miles
+Transmission:	Automatic
+Exterior Color:	Red,torch
+Interior Color:	Ebony
+Gas Mileage:	15 MPG City
+25 MPG Highway
+Engine:	V8
+Seller:	Dealer
+VIN:	1G1YE3DW4D5107669
+Stock #:	48342
+Major Options:	 Leather Seats

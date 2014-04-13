@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <title>ISEL Car - O seu carro a vender ou a Comprar, está sempre a ganhar</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Marques e Rui Corveira">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="O seu Carro a vender oua a comprar, está sempre a ganhar">
+    <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- 
+    <link href="css/theme.css" rel="stylesheet">-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
+    <!-- http://code.google.com/p/html5shiv/	-->
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!-- Begin Container Menus -->
+    <div class="container">
+        <a href="./index.html">
+            <img src="images/Logo_V2.png" height="15%" width="15%" alt="ISEL Car">
+        </a>
+        <div class="masthead">
+            <!--<h3 class="text-muted">ISEL Car</h3>-->
+            <ul class="nav nav-justified">
+                <li><a href="./Passageiros.html" title="Passageiros">Veiculos Passageiros</a>
+                </li>
+                <li><a href="./Comerciais.html" title="Comerciais">Veiculos Comerciais</a>
+                </li>
+                <li><a href="./Pesquisar.html" title="Pesquisar">Pesquisar</a>
+                </li>
+                <li><a href="./Anunciar.html" title="Anunciar">Anunciar</a>
+                </li>
+                <li><a href="./SaberMais.html" title="Anunciar">Saber Mais</a>
+                </li>
+                <li>
+                    <a data-toggle="modal" title="Entrar" data-target=".login" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Container Menus -->
+    <br>
+    <!-- Begin Container Carousel -->
+    <div class="container">
+
+        <!-- ========================== Carousel  ========================== -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" align=center>
+                    <a href="./Detalhe.html">
+                        <img src="Carros/Chevrolet/Corvette/35991386/2013_chevrolet_corvette-pic-1796584241791463184-1024x768.jpeg" width="100%" height="0%" alt="First slide">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Chevrolet Corvette</h1>
+                            <p>Pure Muscle. A sports car by the Chevrolet division of General Motors (GM)</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item" align=center>
+                    <a href="./Detalhe.html">
+                        <img src="Carros/Chevrolet/Corvette/35991385/Chevrolet-Corvette-35991387.jpg" width="100%" height="100%" alt="Second slide">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Chevrolet Corvette</h1>
+                            <p>Desportivo Americano Fantástico!</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item" align=center>
+                    <a href="./Detalhe.html">
+                        <img src="Carros/AstonMartin/Vantage/36046298/Aston-Martin-Vantage-36046298.jpg" width="100%" height="100%" alt="Third slide">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Austin Martin Vantage</h1>
+                            <p>Raça e requinte, um puro sangue inglês.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <!-- /.carousel -->
+
+        <hr>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="well">
+            <h2>Pesquisa Rápida</h2>
+            <form role="form">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <label for="Marca" placeholder="Marca">Marca</label>
+                            <select class="form-control" id="Marca" name="Marca">
+                                <option value="__PLACEHOLDER__" selected>Escolha a Marca</option>
+                                <option value="Alfa Romeo">Alfa Romeo</option>
+                                <option value="Aston Martin">Aston Martin</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Bentley">Bentley</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Crysler">Crysler</option>
+                                <option value="Citroen">Citroen</option>
+                                <option value="Dacia">Dacia</option>
+                                <option value="Daewoo">Daewoo</option>
+                                <option value="Daihatsu">Daihatsu</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Fiat">Fiat</option>
+                            </select>
+                            <br>
+                            <label for="Modelo" placeholder="Modelo">Modelo</label>
+                            <select class="form-control" id="Modelo" disabled name="Modelo">
+                                <option value="__PLACEHOLDER__" selected>Escolha a Modelo</option>
+                                <option value="Alfa Romeo">Alfa Romeo</option>
+                                <option value="Aston Martin">Aston Martin</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Bentley">Bentley</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Crysler">Crysler</option>
+                                <option value="Citroen">Citroen</option>
+                                <option value="Dacia">Dacia</option>
+                                <option value="Daewoo">Daewoo</option>
+                                <option value="Daihatsu">Daihatsu</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Fiat">Fiat</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="Ano Mínimo" placeholder="Ano Mínimo">Ano Mínimo</label>
+                            <select class="form-control" id="Ano Mínimo" name="Ano Mínimo">
+                                <option value="__PLACEHOLDER__" selected>Escolha o Ano Mínimo</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                            </select>
+                            <br>
+                            <label for="Ano Máximo" placeholder="Ano Máximo">Ano Máximo</label>
+                            <select class="form-control" id="Ano Máximo" name="Ano Máximo">
+                                <option value="__PLACEHOLDER__" selected>Escolha o Ano Máximo</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+
+                            <label for="Km's Máximos" placeholder="Km's Máximos">Km's Máximos</label>
+                            <select class="form-control" id="Km's Máximos" name="Km's Máximos">
+                                <option value="__PLACEHOLDER__" selected>Escolha o Km's Máximos</option>
+                                <option value="10000">Até 10.000Km's</option>
+                                <option value="20000">Até 20.000Km's</option>
+                                <option value="30000">Até 30.000Km's</option>
+                                <option value="40000">Até 40.000Km's</option>
+                                <option value="50000">Até 50.000Km's</option>
+                                <option value="60000">Até 60.000Km's</option>
+                                <option value="70000">Até 70.000Km's</option>
+                                <option value="80000">Até 80.000Km's</option>
+                                <option value="90000">Até 90.000Km's</option>
+                                <option value="100000">Até 100.000Km's</option>
+                                <option value="110000">Até 110.000Km's</option>
+                                <option value="120.000">Até 120.000Km's</option>
+                            </select>
+                            <br>
+                            <label for="Preço Máximo" placeholder="Preço Máximo">Preço Máximo</label>
+                            <select class="form-control" id="Preço Máximo" name="Preço Máximo">
+                                <option value="__PLACEHOLDER__" selected>Escolha o Preço Máximo</option>
+                                <option value="250">Até 250 €</option>
+                                <option value="500">Até 500 €</option>
+                                <option value="750">Até 750 €</option>
+                                <option value="1000">Até 1000 €</option>
+                                <option value="1250">Até 1.250 €</option>
+                                <option value="1500">Até 1.500 €</option>
+                                <option value="1750">Até 1.750 €</option>
+                                <option value="2000">Até 2.000 €</option>
+                                <option value="2250">Até 2.250 €</option>
+                                <option value="2500">Até 2.500 €</option>
+                                <option value="2750">Até 2.750 €</option>
+                                <option value="3000">Até 3.000 €</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+
+                            <label for="Tipo de Veículo" placeholder="Tipo de Veículo">Tipo de Veículo</label>
+                            <select class="form-control" id="Tipo de Veículo" name="Tipo de Veículo">
+                                <option value="__PLACEHOLDER__" selected>Escolha o Tipo de Veículo</option>
+                                <option value="Citadino">Citadino</option>
+                                <option value="Utilitário">Utilitário</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="Carrinha">Carrinha</option>
+                                <option value="Desportivo/Coupé">Desportivo/Coupé</option>
+                                <option value="Cabrio">Cabrio</option>
+                                <option value="Monovolume">Monovolume</option>
+                                <option value="SUV">SUV</option>
+                                <option value="TT">TT</option>
+                                <option value="PickUp">PickUp</option>
+                                <option value="Classico">Classico</option>
+                                <option value="AutoCaravana">AutoCaravana</option>
+                            </select>
+                            <br>
+                            <label for="Combustível" placeholder="Combustível">Combustível</label>
+                            <select class="form-control" id="Combustível" name="Combustível">
+                                <option value="__PLACEHOLDER__" selected>Escolha o Combustível</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Eléctrico">Eléctrico</option>
+                                <option value="Gasolina">Gasolina</option>
+                                <option value="GPL">GPL</option>
+                                <option value="Híbrido">Híbrido</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary btn-block">Pesquisar</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+<footer>
+
+    <div class="footerISELCar">
+        <p>Copyright © 2014 <a href="#">ISEL Car</a>, inc. All rights reserved.</p>
+
+        <p>Trabalho de Programação Internet - Etapa 1</p>
+        <p>PI1314V - Grupo 08</p>
+    </div>
+
+</footer>
+
+
+
+
+<!-- Modal Login Form -->
+<form class="form-signin" role="form" method="post">
+    <div class="modal fade login" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button"  class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                    <img src="images/Logo_V2.png" height="15%" width="15%" alt="ISEL Car">
+                    <h2 class="modal-title" id="mySmallModalLabel">Login:</h2>
+                    
+                    
+                </div>
+                <div class="modal-body">
+                    <label placeholder="Enter your Email Address">Enter your Email Address
+                        <span class="hs-form-required">*</span>
+                    </label>
+                    <input type="email" class="form-control" placeholder="ex: somos.benfica@iselcar.pt" required autofocus>
+                    <br>
+
+                    <label placeholder="Enter your Password">Enter your Password
+                        <span class="hs-form-required">*</span>
+                    </label>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                    <label class="checkbox">
+                        <input type="checkbox" value="remember-me">Remember me
+                    </label>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                        <span class="glyphicon glyphicon-log-in"></span>      Sign in</button>
+
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <a href="#password_recovery" id="recover_account">Recuperar password?</a> 
+                    <span class="glyphicon glyphicon-user"></span>
+
+                    <a href="#signup_window" id="register">Registe-se</a>
+
+
+                </div>
+
+            </div>
+        </div>
+
+</form>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

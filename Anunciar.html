@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <title>ISEL Car - O seu carro a vender ou a Comprar, está sempre a ganhar</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Marques e Rui Corveira">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="O seu Carro a vender oua a comprar, está sempre a ganhar">
+    <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- 
+    <link href="css/theme.css" rel="stylesheet">-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
+    <!-- http://code.google.com/p/html5shiv/    -->
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!-- Begin Container Menus -->
+    <div class="container">
+        <a href="./index.html">
+            <img src="images/Logo_V2.png" height="15%" width="15%" alt="ISEL Car">
+        </a>
+        <div class="masthead">
+            <!--<h3 class="text-muted">ISEL Car</h3>-->
+            <ul class="nav nav-justified">
+                <li><a href="./Passageiros.html" title="Passageiros">Veiculos Passageiros</a>
+                </li>
+                <li><a href="./Comerciais.html" title="Comerciais">Veiculos Comerciais</a>
+                </li>
+                <li><a href="./Pesquisar.html" title="Pesquisar">Pesquisar</a>
+                </li>
+                <li><a href="./Anunciar.html" title="Anunciar">Anunciar</a>
+                </li>
+                <li><a href="./SaberMais.html" title="Anunciar">Saber Mais</a>
+                </li>
+                <li>
+                    <a data-toggle="modal" title="Entrar" data-target=".login" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Container Menus -->
+    <br>
+    <!-- Begin Container Anunciar -->
+    <div class="form"></div>
+    <div class="container">
+        <div class="well">
+            <form role="form">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <legend>Dados do Anúncio:</legend>
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Título do anúncio</span>
+                                <input type="text" class="form-control" id="titulo">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Nome do Anunciante</span>
+                                <input type="text" class="form-control" id="anunciante">
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Preço</span>
+
+                                <input type="text" class="form-control" id="Preço">
+                                <span class="input-group-addon">€</span>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group input-group-sm">
+                                
+
+                                <div class="form-control" disabled>Negociável?</div>
+                                <span class="input-group-addon">
+                                    <input type="checkbox" id="Negociavel">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <div class="input-group date" id="datepicker" data-date-format="YYYY/MM/DD">
+                                    <span class="input-group-addon">Data de Validade</span>
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon-calendar glyphicon"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                            $(function() {
+                                $('#datepicker').datetimepicker({
+                                    pickTime: false
+                                });
+                            });
+                            </script>
+                        </div>
+
+                    </div>
+                    <br>
+                    <legend>Localização</legend>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Distrito</span>
+                                <select class="form-control" id="Distrito" name="Distrito">
+                                    <option value="__PLACEHOLDER__" selected>Escolha o Distrito</option>
+                                    <option value="Aveiro">Aveiro</option>
+                                    <option value="Beja">Beja</option>
+                                    <option value="Braga">Braga</option>
+                                    <option value="Bragança">Bragança</option>
+                                    <option value="Castelo Branco">Castelo Branco</option>
+                                    <option value="Coimbra">Coimbra</option>
+                                    <option value="Évora">Évora</option>
+                                    <option value="Faro">Faro</option>
+                                    <option value="Guarda">Guarda</option>
+                                    <option value="Leiria">Leiria</option>
+                                    <option value="Lisboa">Lisboa</option>
+                                    <option value="Portalegre">Portalegre</option>
+                                    <option value="Porto">Porto</option>
+                                    <option value="Santarém">Santarém</option>
+                                    <option value="Setúbal">Setúbal</option>
+                                    <option value="Viana do Castelo">Viana do Castelo</option>
+                                    <option value="Vila Real">Vila Real</option>
+                                    <option value="Viseu">Viseu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Concelho</span>
+                                <select class="form-control" id="Concelho" name="Concelho" disabled>
+                                    <option value="__PLACEHOLDER__" selected>Escolha o Concelho</option>
+                                    <option value="Aveiro">Aveiro</option>
+                                    <option value="Beja">Beja</option>
+                                    <option value="Braga">Braga</option>
+                                    <option value="Bragança">Bragança</option>
+                                    <option value="Castelo Branco">Castelo Branco</option>
+                                    <option value="Coimbra">Coimbra</option>
+                                    <option value="Évora">Évora</option>
+                                    <option value="Faro">Faro</option>
+                                    <option value="Guarda">Guarda</option>
+                                    <option value="Leiria">Leiria</option>
+                                    <option value="Lisboa">Lisboa</option>
+                                    <option value="Portalegre">Portalegre</option>
+                                    <option value="Porto">Porto</option>
+                                    <option value="Santarém">Santarém</option>
+                                    <option value="Setúbal">Setúbal</option>
+                                    <option value="Viana do Castelo">Viana do Castelo</option>
+                                    <option value="Vila Real">Vila Real</option>
+                                    <option value="Viseu">Viseu</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <legend>Dados do Veículo</legend>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Marca</span>
+                                <select class="form-control" id="Marca" name="Marca">
+                                    <option value="__PLACEHOLDER__" selected>Escolha a Marca</option>
+                                    <option value="Alfa Romeo">Alfa Romeo</option>
+                                    <option value="Aston Martin">Aston Martin</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Bentley">Bentley</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Crysler">Crysler</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Dacia">Dacia</option>
+                                    <option value="Daewoo">Daewoo</option>
+                                    <option value="Daihatsu">Daihatsu</option>
+                                    <option value="Dodge">Dodge</option>
+                                    <option value="Ferrari">Ferrari</option>
+                                    <option value="Fiat">Fiat</option>
+                                </select>
+                            </div>
+                            <h5></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Modelo</span>
+                                <select class="form-control" id="Modelo" name="Modelo" disabled>
+                                    <option value="__PLACEHOLDER__" selected>Escolha a Modelo</option>
+                                    <option value="Alfa Romeo">Alfa Romeo</option>
+                                    <option value="Aston Martin">Aston Martin</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Bentley">Bentley</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Crysler">Crysler</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Dacia">Dacia</option>
+                                    <option value="Daewoo">Daewoo</option>
+                                    <option value="Daihatsu">Daihatsu</option>
+                                    <option value="Dodge">Dodge</option>
+                                    <option value="Ferrari">Ferrari</option>
+                                    <option value="Fiat">Fiat</option>
+                                </select>
+                            </div>
+                            <h5></h5>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Versão</span>
+                                <select class="form-control" id="Versão" name="Versão" disabled>
+                                    <option value="__PLACEHOLDER__" selected>Escolha a Versão</option>
+                                    <option value="Alfa Romeo">Alfa Romeo</option>
+                                    <option value="Aston Martin">Aston Martin</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Bentley">Bentley</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Crysler">Crysler</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Dacia">Dacia</option>
+                                    <option value="Daewoo">Daewoo</option>
+                                    <option value="Daihatsu">Daihatsu</option>
+                                    <option value="Dodge">Dodge</option>
+                                    <option value="Ferrari">Ferrari</option>
+                                    <option value="Fiat">Fiat</option>
+                                </select>
+                            </div>
+                            <h5></h5>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Ano</span>
+                                <select class="form-control" id="Ano Mínimo" name="Ano">
+                                    <option value="__PLACEHOLDER__" selected>Escolha o Ano</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                </select>
+                            </div>
+                            <h5></h5>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Mês</span>
+                                <select class="form-control" id="Mês" name="Mês" disabled>
+                                    <option value="__PLACEHOLDER__" selected>Escolha o Mês</option>
+                                    <option value="Jan">Janeiro</option>
+                                    <option value="Fev">Fevereiro</option>
+                                    <option value="Mar">Março</option>
+                                    <option value="Abr">Abril</option>
+                                    <option value="Mai">Maio</option>
+                                    <option value="Jun">Junho</option>
+                                    <option value="Jul">Julho</option>
+                                    <option value="Ago">Agosto</option>
+                                    <option value="Set">Setembro</option>
+                                    <option value="Out">Outubro</option>
+                                    <option value="Nov">Novembro</option>
+                                    <option value="Dez">Dezembro</option>
+                                </select>
+                            </div>
+                            <h5></h5>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Tipo de Veículo</span>
+                                <select class="form-control" id="Tipo de Veículo" name="Tipo de Veículo">
+                                    <option value="__PLACEHOLDER__" selected>Escolha o Tipo de Veículo</option>
+                                    <option value="Citadino">Citadino</option>
+                                    <option value="Utilitário">Utilitário</option>
+                                    <option value="Sedan">Sedan</option>
+                                    <option value="Carrinha">Carrinha</option>
+                                    <option value="Desportivo/Coupé">Desportivo/Coupé</option>
+                                    <option value="Cabrio">Cabrio</option>
+                                    <option value="Monovolume">Monovolume</option>
+                                    <option value="SUV">SUV</option>
+                                    <option value="TT">TT</option>
+                                    <option value="PickUp">PickUp</option>
+                                    <option value="Classico">Classico</option>
+                                    <option value="AutoCaravana">AutoCaravana</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Combustível</span>
+                                <select class="form-control" id="Combustível" name="Combustível">
+                                    <option value="__PLACEHOLDER__" selected>Tipo Combustível</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Eléctrico">Eléctrico</option>
+                                    <option value="Gasolina">Gasolina</option>
+                                    <option value="GPL">GPL</option>
+                                    <option value="Híbrido">Híbrido</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">Kms</span>
+                                <input type="text" class="form-control" id="kms">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <legend>Imagens do Veículo</legend>
+                    <div class="row">
+                        <div class="col-md-3 pull-right">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/200x200" src="images/NoImageThumbnail.jpg" height="100%" width="100%">
+                            </div>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Adicionar</button>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Remover</button>
+                        </div>
+                        <div class="col-md-3 pull-right">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/200x200" src="images/NoImageThumbnail.jpg" height="100%" width="100%">
+                            </div>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Adicionar</button>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Remover</button>
+                        </div>
+                        <div class="col-md-3 pull-right">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/200x200" src="images/NoImageThumbnail.jpg" height="100%" width="100%">
+                            </div>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Adicionar</button>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Remover</button>
+                        </div>
+                        <div class="col-md-3 pull-right">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/200x200" src="images/NoImageThumbnail.jpg" height="100%" width="100%">
+                            </div>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Adicionar</button>
+                                <button type="file" class="btn btn-primary btn-md" role="button">Remover</button>
+                        </div>
+                    </div>
+                </div><!-- Close Form Group -->
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Submeter</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+   
+
+</body>
+<footer>
+
+    <div class="footerISELCar">
+        <p>Copyright © 2014 <a href="#">ISEL Car</a>, inc. All rights reserved.</p>
+
+        <p>Trabalho de Programação Internet - Etapa 1</p>
+        <p>PI1314V - Grupo 08</p>
+    </div>
+
+</footer>
+
+
+
+
+<!-- Modal Login Form -->
+<form class="form-signin" role="form" method="post">
+    <div class="modal fade login" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button"  class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                    <img src="images/Logo_V2.png" height="15%" width="15%" alt="ISEL Car">
+                    <h2 class="modal-title" id="mySmallModalLabel">Login:</h2>
+                    
+                    
+                </div>
+                <div class="modal-body">
+                    <label placeholder="Enter your Email Address">Enter your Email Address
+                        <span class="hs-form-required">*</span>
+                    </label>
+                    <input type="email" class="form-control" placeholder="ex: somos.benfica@iselcar.pt" required autofocus>
+                    <br>
+
+                    <label placeholder="Enter your Password">Enter your Password
+                        <span class="hs-form-required">*</span>
+                    </label>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                    <label class="checkbox">
+                        <input type="checkbox" value="remember-me">Remember me
+                    </label>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                        <span class="glyphicon glyphicon-log-in"></span>      Sign in</button>
+
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <a href="#password_recovery" id="recover_account">Recuperar password?</a> 
+                    <span class="glyphicon glyphicon-user"></span>
+
+                    <a href="#signup_window" id="register">Registe-se</a>
+
+
+                </div>
+
+            </div>
+        </div>
+
+</form>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
